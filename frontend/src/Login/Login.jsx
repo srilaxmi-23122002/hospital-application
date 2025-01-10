@@ -9,7 +9,7 @@ export default function Login() {
     const navigate=useNavigate()
     function loginForm(e){
         e.preventDefault()
-        axios.post("http://localhost:4000/api/patients/login",{email,password})
+        axios.post("https://hospital-application-fxsk.onrender.com/api/patients/login",{email,password})
             .then((res)=>{
                 console.log(res)
                 if(res.status===200){
